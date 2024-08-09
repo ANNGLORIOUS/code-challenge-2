@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import BotCollection from './BotCollection'
 import BotArmy from './BotArmy'
 import BotButton from './BotButton'
-import BotButton from "./BotButton"
+
 
 class BotPage extends Component {
   state = {
