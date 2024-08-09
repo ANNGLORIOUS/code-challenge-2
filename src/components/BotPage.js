@@ -4,7 +4,7 @@ import BotArmy from './BotArmy'
 import BotButton from './BotButton'
 import BotButton from "./BotButton"
 
-class BotsPage extends Component {
+class BotPage extends Component {
   state = {
     botCollection: [],
     filteredCollection: [],
@@ -86,4 +86,4 @@ class BotsPage extends Component {
   }
 }
 
-export default BotsPage
+export default BotPage
