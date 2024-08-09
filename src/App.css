@@ -1,4 +1,22 @@
-.bot-army {
+
+
+.ui.grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0px 20px;
+  }
+  
+  .ui.grid .column {
+    flex: 0 0 auto;
+  }
+  
+  .ui.card {
+    width: 200px; /* Adjust based on your design */
+    margin: 10px; /* Adjust as needed */
+  }
+  
+  .bot-army {
     overflow-x: scroll;
     min-height: 300px;
     max-width: 100%;
@@ -12,3 +30,4 @@
   .ui.grid {
     padding: 0px 20px;
   }
+  
