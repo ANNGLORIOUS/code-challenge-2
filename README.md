@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# SA. 02 Phase 2 Code Challenge: Bot Battlr
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a repository on your GitHub account.
 
-## Available Scripts
 
-In the project directory, you can run:
+Use JavaScript and Html to wire down the solution.
 
-### `npm start`
+Push the solution to the above repository once done.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Submit the repository link for grading.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ensure your repository has a well written README.
 
-### `npm test`
+#### By **{List of contributors}**
+This project was created and is sole property of Annglorious mueni.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Instructions
+- For this project, you’ll be building out a React application that displays a
 
-### `npm run build`
+list of available bots, among other features. Try your best to find the right
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+places to insert code into the established code base.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Part of what this code challenge is testing is your ability to follow given
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+instructions. While you will definitely have a significant amount of freedom in
 
-### `npm run eject`
+how you implement the features, be sure to carefully read the directions for
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+setting up the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Requirements
+* For this project, you must:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Have a well-written README file.
+- Fetch data from a local server running JSON DB server. 
+- The instructions below will walk you through the process of ideation and planning your app: deciding on your user interface, planning how the information will be laid out on the page, etc. You should work through all the planning steps before you start doing any coding.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Welcome to **Bot Battlr**, the one and only spot in the known universe where you can custom build your own Bot Army! This is our app:
 
-## Learn More
+Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Project Setup
+Once you have the plan in place for the application you want to build take the following steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a new project folder.
+Create a new GitHub repository.(NB: ENSURE IT IS PRIVATE).
+Add your TM as a contributor to the project. (This is only for grading purposes.)
+Please make sure you regularly commit to the repository.
+In your project directory, create a db.json file and use this dataLinks to an external site. for your server DB.
+Run this command to get the backend started:
+json-server --watch db.json
 
-### Code Splitting
+Test your server by visiting this route in the browser:
+http://localhost:8001/bots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Project Guidelines
+Your project should conform to the following set of guidelines:
 
-### Analyzing the Bundle Size
+### Core Deliverables
+As a user, I should be able to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- See profiles of all bots rendered in `BotCollection`.
 
-### Making a Progressive Web App
+- Add an individual bot to my army by clicking on it. The selected bot should
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  render in the `YourBotArmy` component. The bot can be enlisted only **once**.
 
-### Advanced Configuration
+  The bot **does not** disappear from the `BotCollection`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Release a bot from my army by clicking on it. The bot disappears from the
 
-### Deployment
+  `YourBotArmy` component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Discharge a bot from their service forever, by clicking the red button marked
 
-### `npm run build` fails to minify
+  "x", which would delete the bot both from the backend and from the
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  `YourBotArmy` on the frontend.
+
+
+
+### Advanced Deliverables
+These deliverables are not required to pass the code challenge, but if you have
+
+the extra time, or even after the code challenge, they are a great way to
+
+stretch your skills.
+
+> Note: If you are going to attempt these advanced deliverables, please be sure to have a working project, and commit all the Core Deliverables first!
+
+As a user, I should be able to:
+
+- Choose if I want to enlist a bot into my army or just see their data. Clicking
+
+  on the card should instead display a show view (`BotSpecs`) for that bot,
+
+  which should replace `BotsCollection`. BotSpecs should have two buttons: one
+
+  to go back to the list view and another to enlist that bot. Your app could
+
+  look like the following:
+
+- Sort bots by their health, damage or armor. For this, create a new component,
+
+  `SortBar`.
+
+- When I enlist a bot it will be **removed** from the `BotCollection` and added
+
+  to `YourBotArmy`.
+
+- Filter bots by their class. We can select a few filters at the same time.
+
+- Sort bots by their health, damage or armor. For this, create a new component,
+
+  `SortBar`.
+
+- Only enlist **one** bot from each `bot_class`. The classes are
+
+  `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
+
+
+
+## Setup/Installation Requirements
+* One would need either linux or wsl for window users
+* A copy of visual basic code installed
+* A github account
+
+1. Open your terminal and go to the directory you wish to work from.
+2. Go to the following url using ur github account https://github.com/ANNGLORIOUS/code-challenge-2
+3. Go to the code tab and clone the ssh key
+4. Go back to the termina and type git clone <-followed by the ssh key you copied /cloned ->
+5. Enter your new cloned repository and type in code .
+6. On the visual studio code that has now opened, go to the the run tab and hit start debugging.
+## Technologies Used
+This program is built purely with react js (javascript ,html and css) using the visual code environment.
+
+## Support and contact details
+For any issues please email me at annglorious.mueni@student.moringaschool.com
+### License
+Apache License 2.0
+
+
