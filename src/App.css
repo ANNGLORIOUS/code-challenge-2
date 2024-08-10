@@ -8,10 +8,13 @@
   
   .ui.grid .column {
     flex: 0 0 auto;
+    
+   
   }
   
   .ui.card {
     width: 100%; 
+    
   }
   
   .bot-army {
