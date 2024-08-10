@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>Welcome to the BattleBots!</h1>
       <BotPage />
-      <footer>�� 2022 BattleBots</footer>
+      <footer>�� 2030 BattleBots</footer>
       
     </div>
   );
