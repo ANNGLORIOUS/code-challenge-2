@@ -67,6 +67,7 @@ footer {
 .ui.grid > .row.bot-army-row {
   display: flex;
   flex-wrap: nowrap;
+  gap : 50px;
 }
 
 .ui.segment {
