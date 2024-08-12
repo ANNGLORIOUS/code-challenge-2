@@ -9,6 +9,7 @@ const BotCollection = ({ botCollection, action, removeCard }) => {
   return (
     <div className="ui grid">
       {displayBotCards}
+      {/* display message */}
       {botCollection.length === 0 && <p>You have completed your Bot Army. There are no more bots to collect.</p>}
     </div>
   );

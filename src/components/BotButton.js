@@ -1,6 +1,6 @@
-
 import React from "react"
 
+// information about the bots
 const botTypeClasses = {
   Assault: "icon military",
   Defender: "icon shield",
@@ -9,7 +9,7 @@ const botTypeClasses = {
   Witch: "icon magic",
   Captain: "icon star"
 }
-
+// information about the bots
 const BotButton = props => {
   return (
     <div className="ui segment">
@@ -17,7 +17,7 @@ const BotButton = props => {
         <div className="row">
           <div className="four wide column">
             <img
-              alt="oh no!"
+              alt="no bot found!"
               className="ui medium circular image bordered"
               src={props.bot.avatar_url}
             />

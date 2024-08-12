@@ -8,15 +8,18 @@ const botTypeClasses = {
   Witch: "icon magic",
   Captain: "icon star"
 };
-
+// displays the bot cards.
 const BotCard = (props) => {
   const { bot, action, removeCard } = props;
 
-  function handleClick(e) {
+
+  // calls the action prop when botcard is clicked.
+  function handleClick(e) {  
     e.stopPropagation();
     action(bot);
   }
 
+  // calls the removeCard prop when the "x" button is clicked.
   function handleDischarge(e) {
     e.stopPropagation();
     removeCard(bot);

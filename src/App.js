@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the BattleBots!</h1>
+      <h1>Welcome to the Battle Bots!</h1>
       <BotPage />
       <footer>�� 2030 BattleBots</footer>
       
