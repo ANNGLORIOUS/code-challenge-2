@@ -1,22 +1,27 @@
-import React from 'react'
-import BotCard from "./BotCard"
+import React, { Component } from 'react';
+import BotCard from "./BotCard";
 
-export default function YourBotArmy(props) {
+class BotArmy extends Component {
+  // Render the BotArmy component
+  render() {
+    // Destructure props.
+    const { bots, action, removeCard } = this.props;
 
-  // render a collection of bot card components in the bots arrary passed as a props.
-  const displayBots = props.bots.map(bot => {
-    return <BotCard bot={bot} action={props.action} removeCard={props.removeCard} />
-  })
+    // Render a collection of BotCard components
+    const displayBots = bots.map(bot => {
+      return <BotCard key={bot.id} bot={bot} action={action} removeCard={removeCard} />;
+    });
 
-
-  return (
-    <div className="ui segment inverted olive bot-army">
-      <div className="ui five column grid">
-        <div className="row bot-army-row">
-          {displayBots}
+    return (
+      <div className="ui segment inverted olive bot-army">
+        <div className="ui five column grid">
+          <div className="row bot-army-row">
+            {displayBots}
+          </div>
         </div>
       </div>
-    </div>
-  )
-
+    );
+  }
 }
+
+export default BotArmy;
