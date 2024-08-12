@@ -4,7 +4,7 @@ import BotCard from "./BotCard";
 class BotArmy extends Component {
   // Render the BotArmy component
   render() {
-    // Destructure props.
+    // Destructure props for bots, action, and removeCard
     const { bots, action, removeCard } = this.props;
 
     // Render a collection of BotCard components
